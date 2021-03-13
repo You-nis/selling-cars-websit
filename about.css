@@ -1,0 +1,48 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.about{
+    height: 100vh;
+    background: url(img/about-bcg.jpeg)center/cover
+
+    fixed no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+.about-container{
+    background: rgba(255,255,255,0.6);
+    text-align: center;
+    padding: 40px;
+    margin-top: 100%;
+
+}
+
+.about-container h3{
+ font-size: 40px;
+ text-transform: capitalize;
+}
+
+.about-container p{
+    line-height: 3;
+    color: #ad343e;
+    margin: 20px 0;
+}
+
+@media screen and (min-width: 776px){
+    .about-container{
+        max-width: 50%;
+        border-radius: 30px;
+    }
+    .about-container{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}

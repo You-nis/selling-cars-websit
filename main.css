@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Mukta Mahee', sans-serif;
+}
+
+header{
+    height: 100vh;  /*  for all page (Screen) */
+    background: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)),
+    url(img/mustang.jpg)center/cover  fixed no-repeat;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* ###########[ Styling the navigation bar ]########## */
+nav ul{
+    list-style-type: none; /* removed the . form (ul) li*/
+    display: block;
+}
+
+nav ul a{
+    display: block;    
+    padding: 30px;
+    font-size: 21px;
+    text-decoration: none;  /* remove under line from unorderlist*/
+    text-transform: uppercase;
+    
+    color:#d52332;    
+    background: #0d1317;
+                                                                  
+    transition: color 2s ease,background 2s ease,  padding 2s ease    /* Latency Leffting Left*/          ;
+}
+nav ul a:hover{
+    color: #e0e0ce;
+    background: #474747;
+    /*padding-left : 60px;    */
+}
+
+
+
+ nav{
+     position: fixed;
+     width: 100%;
+     /*z-index: 10;*/
+    /*flex: 0 0 auto;*/
+
+ }
+
+
+ @media screen and (min-width:776px){
+    
+    nav ul {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        background: rgba(13,19,23,0.6);
+        }
+    nav ul a {
+        background: transparent; 
+    }
+
+    nav ul a:hover {
+        background: transparent;
+        padding-left: 20px;   /*all elements in nav goes to left ( when pointing on it) */ 
+    }
+
+}
+
+.banner{
+    margin: 100px;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: right;
+    text-align: center;
+}
+
+.banner h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #ac212c;
+}
+.banner h3{
+    text-transform: capitalize;
+    font-size: 30px;
+   
+}
+
+
+
+
+
+
+
+/*######################[ projects ]##################*/
+
+
+.title h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #474747;
+}
+  .projects-section{
+       padding: 0 0 100px;
+       background: #f5f3f5;
+    }
+
+.title-underline{
+    background: #ad343e;
+    width: 350px;
+    height: 5px;
+    margin:10px auto;  
+}
+
+.title{
+    padding: 40px 0;
+}
+
+
+    .box{
+        border: 2px solid gray;
+            padding: 10px;
+            padding-top:20px;
+            padding-bottom:1px;
+
+            display: flex;
+            margin: 5px;
+
+    }
+    .box img{
+          width: 34%;
+          padding-right: 90px;
+          padding-left: 40px;
+          margin: 20px;
+            border-radius: 30px;
+    }
+
+    .box table{
+        color:  #ac212c;
+        background: rgba(113,40,20,0.1);
+
+        border: none;
+        padding: 10px;
+        padding-right: 100px;
+        padding-left: 75px;
+
+        border-radius: 30px;
+
+        font-family: tims new  roman;
+        font-size: 20px;
+
+    }
+    .box td{
+        padding: 4px;
+        padding-left: 50px;
+         border: 1px solid gray;
+        border-radius: 90px; 
+        text-transform: capitalize; 
+
+    }
+
+
+    .table-info{
+        border: 2px solid red;
+        display: block;
+        margin-top: 70%;
+        margin-left: 50%;
+
+    }
+
+
+/*#############[ footer ]##################*/
+footer{
+     background: #0d1317;
+    padding: 60px 0;
+   text-align: center;
+}
+
+footer img{
+    width: 50px;
+
+    cursor: pointer;
+    margin: 10px 12px 22px;
+    box-shadow: 0 0 13px 0  white ;
+    border-radius: 30%;
+}
+
+footer p{
+        padding: 20px 0;
+    text-transform: capitalize;
+    color: #f5f3f5;
+    font-family: times new roman;
+    font-size: 25px;
+}

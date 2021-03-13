@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Add New Car</title>
+
+		<link rel="stylesheet" type="text/css" href="add_car.css">
+	</head>
+<body>
+  <section class="add_car">
+  	 
+  	 <div class="box">
+
+  	 	<h1>add new car</h1>
+  	 	<hr>
+
+  	 	<form class="form-box" method="POST" action="php/add_car.php" enctype="multipart/form-data">
+  	 		<table>
+  	 		    	<tr>  <td>	<label>car name:</label> <td>
+  	 		         <td> <input type="text" name="carName" placeholder="Car Name" required="required"></td> </tr>
+  	 	    		
+  	 	    		<tr>  <td>	<label>owner name:</label> <td>
+  	 		         <td> <input type="text" name="ownerName" placeholder="Full Name" required="required"></td> </tr>
+						
+  	 		         <tr>  <td>	<label>vin:</label> <td>
+  	 		         <td> <input type="text" name="vin" placeholder="Vin Number" required="required"></td> </tr>
+  	 	    		
+                     <tr>  <td>	<label>model:</label> <td>
+  	 		         <td> <input type="number" name="model" placeholder="Car Year" required="required"></td> </tr>
+
+  	 	    			
+                     <tr>  <td>	<label>manufacture:</label> <td>
+  	 		         <td> <input type="text" name="manufacture" placeholder="Company Name" required="required"></td> </tr>
+
+                     <tr>  <td>	<label>Transmition:</label> <td>
+  	 		         <td>  
+  	 		         	<select name="transmition">
+							<option selected hidden value="">Select</option>
+  	 		         		<option value="automatic">Automatic</option>
+  	 		         		<option value="manual">Manual</option>
+  	 		         	</select>    </td> </tr>
+
+                     <tr>  <td>	<label>Gas type:</label> <td>
+  	 		         <td>  
+  	 		         	<select name="gasType">
+  	 		         		<option selected hidden value="">Select</option>
+  	 		         		<option value="petrol">Petrol</option>
+  	 		         		<option value="diesel">Diesel</option>
+  	 		         		<option value="hyperd">Hyperd</option>
+  	 		         		<option value="electric">Electric</option>
+  	 		         	</select>    </td> </tr>
+
+
+  	 		         	<tr>  <td> <label>expiration licence</label> <td>
+  	 		         		<td> <input type="date" name="date"> </td>  	</tr>
+
+
+                     <tr>  <td>	<label>phone number:</label> <td>
+  	 		         <td> <input type="phone" name="phoneNumber" placeholder="Phone Number" required="required"></td> </tr>
+
+  	 		         	<tr>  <td>	<label>address:</label> <td>
+  	 		         <td> <input type="textarea" name="address" required="required" placeholder="Province - City"></td> </tr>
+
+  	 		         <tr>
+  	 		         <td> <label>Upload Car photo</label></td> </tr>
+  	 		         <tr> <td> <input type="file" name="image" required="required" class="upload-btn"> </td> </tr>
+
+
+  	 		         <tr>    <td> <input type="submit" name="send" value="SEND" class="button"> </td> <td></td> </tr>
+  	 	   </table>
+					
+  	 	</form>
+  	 	
+  	 </div>
+
+   </section>
+	<!-- 	
+   <section class="add_car2">		
+  </section>
+ -->
+</body>
+</html>
